@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" />
     <title>Banana Speaks</title>
+    <style>
+        textarea{
+            width: 80%;
+            height: 10vh;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+        }
+    </style>
     <!--<script>console.log("Hello! working")</script>-->
 </head>
 <body>
@@ -14,8 +23,10 @@
         <div class="nav-brand" style="text-align: center;">Banana Speaks</div>
     </nav>
 
+    <!--TextArea-->
+    <textarea id="txt-input" placeholder="Enter Text"></textarea>
+
     <!--Button-->
-    <br><br>
     <button id="btn-translate">Translate</button>
     <script src="app.js" type="text/javascript"></script>
     
