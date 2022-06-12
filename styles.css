@@ -5,6 +5,10 @@
     --primary-color: #fcd34d;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     font-family: 'Architects Daughter', cursive;
 }
@@ -29,6 +33,7 @@ body{
     border-bottom-right-radius: 1rem;
     padding: 3rem;
     
+    
 }
 
 .navigation .nav-brand{
@@ -37,6 +42,12 @@ body{
     font-size: xx-large;
 }
 
+.img{
+    max-width: 160px;
+    display: block;
+    margin: auto;
+    padding-top: 2rem;
+}
 
 /*Textarea*/
 .txt{
@@ -50,6 +61,8 @@ body{
 
 /*button*/
 #btn-translate{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 17px;
     font-weight: bold;
     padding: 1rem;
     margin-left: 5rem;
@@ -60,7 +73,7 @@ body{
 .st{
     font-size: x-large;
     text-align: center;
-    padding: 2rem 0rem;
+    padding: 0.5rem 0rem;
     font-weight: bold;
 }
 
@@ -71,23 +84,27 @@ body{
     width: 42rem;
     margin: 0rem 0rem 0rem 5rem;
     overflow: scroll;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
 
 
 
 /*footer*/
 .footer{
-    bottom: 0;
-    position: fixed;
+    
     width: 100%;
     background-color: var(--primary-color);
     padding: 2rem 1rem;
     text-align: center;
     color: black;
     border-top-left-radius: 1rem;
+    padding-inline-start: 0px;
     
 }
 .footer .footer-header{
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
+    padding-bottom: 1rem;
+
 }
