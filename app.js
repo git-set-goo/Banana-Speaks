@@ -5,7 +5,7 @@ var outputDiv = document.querySelector("#output");  //Output
 var serverurl = "https://api.funtranslations.com/translate/minion.json"
 
 function getTranslationURL(text){
-    return serverurl + "?"+"text=" + text
+    return serverurl + "?"+"text=" + text  //appending text to url
 }
 
 function errorHandler(error){
@@ -22,7 +22,7 @@ function clickHandler() {
         var translatedText = json.contents.translated;  //Translated text
         outputDiv.innerText = translatedText;
 })
-        .catch(errorHandler)
+        .catch(errorHandler) //no need to pass error
 };
 
 btnTranslate.addEventListener("click",clickHandler) //onclick do this
